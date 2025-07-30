@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Selector de elemento */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  min-height: 100%;
+}
+
+/* Selector de ID (aunque en el HTML ya se aplicó un color con CSS interno) */
+#titulo-pagina {
+  font-size: 2.5em;
+  padding: 20px;
+  color: white;
+}
+
+/* Selector de clase */
+.intro {
+  font-size: 1.1em;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Selector de clase para un componente */
+.tarjeta {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto; /* Centra la tarjeta horizontalmente */
+  max-width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Selector de clase combinado (la tarjeta que también tiene la clase "destacado") */
+.tarjeta.destacado {
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Selector de descendiente (un <span> dentro de un elemento con la clase "resaltado") */
+.resaltado {
+  color: orange;
+  font-style: italic;
+}
+
+/* Selectores de elemento para botones */
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Pseudo-clase para interacción */
+button:hover {
+  background-color: #218838;
+}
+
+/* Estilo para el pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #333;
+  color: white;
+  font-size: 0.9em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
