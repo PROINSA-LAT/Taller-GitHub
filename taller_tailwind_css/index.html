@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Taller de Tailwind CSS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        jose: "#bdbdbc",
+                        grey_proinsa: "#333"
+                    }, keyframes: {
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fade-in-up 0.5s ease-out both',
+                    }
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body
+    class="bg-grey_proinsa dark:bg-red-100 text-gray-800 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div
+        class="w-full max-w-md bg-white dark:bg-gray-800 rounded-2xl shadow-xl shadow-red-500 hover:shadow-primary p-6 transition-all duration-300 hover:scale-105">
+        <h2 class="text-2xl font-bold text-primary dark:text-red-800 mb-4 text-center">
+            Bienvenido al Taller Tailwind
+        </h2>
+
+        <!-- Botones -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+                class="bg-primary text-white py-2 px-4 rounded-md hover:bg-blue-700 transition dark:bg-blue-600 dark:hover:bg-blue-500">
+                Acción Primaria
+            </button>
+            <button
+                class="border border-primary text-primary py-2 px-4 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900">
+                Acción Secundaria
+            </button>
+        </div>
+    </div>
+
+
+    <button id="toggle-dark" class="mt-6 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-sm">
+        Cambiar modo
+    </button>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-xs text-red-500 text-center">
+        Vista:
+        <span class="inline sm:hidden">Mobile</span>
+        <span class="hidden sm:inline md:hidden">Tablet</span>
+        <span class="hidden md:inline">Desktop</span>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

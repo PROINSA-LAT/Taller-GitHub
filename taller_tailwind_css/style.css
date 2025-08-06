@@ -1,0 +1,13 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  background: rgb(0, 0, 0);
+}
+
+.btn {
+  background: red;
+  height: 60px;
+  width: 100%;
+}
